@@ -1,9 +1,5 @@
 /* fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,6 +7,8 @@
 
 body {
     margin: 0px;
+    font-family: 'Roboto';
+
 }
 
 header
@@ -20,6 +18,73 @@ header
     box-shadow: 0px 1px 10px grey;
     height: 80px;
     border: transparent 1px solid;
+    position: relative;
     
 }
 
+
+
+.sub-header
+{
+    text-align: center;
+     background-color: #eaeaea;
+    color:  #271A1A;
+     width: 100%;
+     padding: 2px;
+     font-size: 12px;
+     font-weight: 100;
+
+
+}
+
+.sub-header h2
+{
+    font-weight: 400;
+}
+
+/* Navigation */
+
+.sub-header-second
+{
+    padding: 2px;
+    background-color: #f6f6f6;
+    text-align: center;
+
+}
+
+.sub-header-second h3
+{
+    margin-top: 30px;
+
+    font-size: 25px;
+
+}
+
+.sub-header-second p
+{
+font-weight: 400;
+
+}
+
+.sub-header-second__btn
+{
+    font-size: 20PX;
+    padding: 25px;
+    border-radius: 100px;
+    border: none;
+    margin: 50px;
+    color: white;
+    box-shadow: -2px 11px 15px -1px rgba(0,0,0,0.38);
+    transition: transform 450ms ease;
+}
+
+.sub-header-second__btn--gradient
+{
+background-image: linear-gradient(#FF79DA, #9356DC) ;
+}
+
+
+.sub-header-second__btn:hover
+{
+    transform: scale(1.1)
+}
