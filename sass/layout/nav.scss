@@ -1,0 +1,45 @@
+.sub-header-second
+{
+    padding: 2px;
+    background-color: #f6f6f6;
+    text-align: center;
+
+    h3
+    {
+        margin-top: 30px;
+    
+        font-size: 25px;
+    
+    }
+    
+    p
+    {
+    font-weight: 400;
+    
+    }
+    
+    &__btn
+    {
+        font-size: 20PX;
+        padding: 25px;
+        border-radius: 100px;
+        border: none;
+        margin: 50px;
+        color: white;
+        transition: transform 450ms ease;
+        @include boxshadow;
+        
+        &--gradient
+        {
+        background-image: linear-gradient($secondarypurple, $primarypurple);
+        }
+        
+        &:hover
+        {
+            transform: scale(1.1)
+        }
+    }
+}
+
+
+

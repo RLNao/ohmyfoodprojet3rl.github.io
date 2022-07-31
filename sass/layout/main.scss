@@ -1,0 +1,132 @@
+.main-container {
+    border: red 1px solid;
+
+
+
+    &__box {
+        @include centered;
+        border: green 1px solid;
+        position: relative;
+
+
+        &__new {
+
+          padding: 10px;
+          height: 35px;
+          width: 85px;
+          position: absolute;
+          top: 10%;
+          right: 17%;
+          background-color: #99e2d0;
+          font-size: 15px;
+           font-weight: bold;
+                                        
+      }
+      }
+
+
+
+
+
+        img{
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            object-fit: cover;
+        }   
+
+        
+        figure {
+            border-radius: 30px;
+            width: 100%;
+            @include boxshadow;
+        }
+
+        figcaption {
+
+            height: 40px;
+            text-align: left;
+            font-weight: bold;
+            margin: 15px;
+
+ 
+        }
+
+
+        span {
+          font-weight: 300;
+          margin-left:5px;
+                  }
+
+                }
+
+
+
+
+
+
+
+
+                .heartone   {
+                  font-size: 25px;
+                  position: absolute;
+                  left: 76%;
+                  top: 78%;
+              }    
+              
+              .hearttwo   {
+                font-size: 25px;
+                position: absolute;
+                left: 76%;
+                top: 78%;
+                opacity: 0;
+                background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &:hover{
+                animation: bounce 1000ms forwards; 
+                }
+              }   
+              
+
+              
+
+              
+
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+      transform: scale3d(1, 1, 1);
+
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        opacity: 1;
+      transform: scale3d(1, 1, 1);
+
+    }
+  }
+
+
+
+  
+
+
