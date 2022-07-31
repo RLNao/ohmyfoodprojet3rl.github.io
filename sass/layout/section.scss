@@ -2,24 +2,37 @@
 {
 @include centered;
 
-height:520px;
+height:450px;
 flex-direction: column;
 width: 100%;
+@media (min-width: 983px){
+    height: 250px;
+                            }
 
-
-
+            
 &__list {
     counter-set: numbers;
     width: 100%;
-
 
 
      ol {
     @include centered;
     flex-wrap: wrap;
     width: 100%;
+    }
 
+    @media (min-width: 679px) and (max-width: 983px) {
+        ol {
+        flex-direction: column;
 
+    
+    }
+    
+    li {
+        width: 60%;
+
+    }
+    
     }
 
 @media (max-width: 678px) {
@@ -29,7 +42,8 @@ width: 100%;
 }
 
 }
-  
+
+
     
     ol li  {
 

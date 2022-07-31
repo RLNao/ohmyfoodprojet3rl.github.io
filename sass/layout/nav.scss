@@ -26,17 +26,21 @@
         border: none;
         margin: 50px;
         color: white;
-        transition: transform 450ms ease;
+        transition: transform 1000ms ease;
         @include boxshadow;
         
         &--gradient
         {
         background-image: linear-gradient($secondarypurple, $primarypurple);
+        
         }
         
         &:hover
         {
-            transform: scale(1.1)
+         
+            transform: scale(1.1);
+            background: linear-gradient(lighten($secondarypurple, 5), lighten($primarypurple, 5));
+            box-shadow:0px 12px 17px 1px rgba(0,0,0,0.34);
         }
     }
 }

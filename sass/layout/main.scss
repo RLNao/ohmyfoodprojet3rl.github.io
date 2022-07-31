@@ -1,12 +1,27 @@
 .main-container {
     border: red 1px solid;
-
-
+height: auto;
+@media (min-width: 983px){
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+              }
 
     &__box {
         @include centered;
-        border: green 1px solid;
+        border: yellow 1px solid;
         position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        @media (min-width: 983px){
+          display: flex;
+          width: 50%;
+          flex-wrap: wrap;
+          flex-direction: row;
+          
+                      }
 
 
         &__new {
@@ -41,6 +56,9 @@
             border-radius: 30px;
             width: 100%;
             @include boxshadow;
+        
+
+
         }
 
         figcaption {
@@ -91,7 +109,6 @@
               }   
               
 
-              
 
               
 
