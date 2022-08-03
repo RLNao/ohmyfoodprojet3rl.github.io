@@ -130,7 +130,6 @@ header {
 }
 
 .main-container {
-  border: red 1px solid;
   height: auto;
 }
 @media (min-width: 983px) {
@@ -151,7 +150,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: yellow 1px solid;
   position: relative;
   width: 100%;
   padding: 10px;
@@ -279,7 +277,6 @@ footer {
   align-items: flex-start;
 }
 footer .foot {
-  border: green 1px solid;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -315,6 +312,18 @@ footer .foot h6 {
   margin: 10px;
 }
 
+header {
+  z-index: 1;
+  position: relative;
+}
+
+.fa-arrow-left-long {
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
 .menucontainer {
   width: 100%;
   flex-direction: column;
@@ -327,7 +336,7 @@ footer .foot h6 {
   height: 350px;
   object-fit: cover;
   position: absolute;
-  top: 0px;
+  top: 80px;
 }
 .menucontainer__box {
   margin-top: 200px;
@@ -345,10 +354,10 @@ footer .foot h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: red 1px solid;
+  background-color: #f6f6f6;
   padding: 20px;
   width: 100%;
-  height: 420px;
+  height: auto;
 }
 .menucontainer__box__part__whitebox {
   position: relative;
@@ -399,6 +408,9 @@ footer .foot h6 {
   font-size: 30px;
   transition: all 500ms ease-in-out;
 }
+.menucontainer__box__part__whitebox:hover h6 {
+  text-overflow: ellipsis;
+}
 .menucontainer__box__part__whitebox:hover .movingbox {
   width: 75px;
 }
@@ -431,6 +443,32 @@ footer .foot h6 {
   top: 7%;
   left: 85%;
   font-size: 35px;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.part1, .part4, .part7 {
+  animation: scale-in-center 1s both;
+}
+
+.part2, .part5, .part8 {
+  animation: scale-in-center 1.3s both;
+}
+
+.part3, .part6, .part9 {
+  animation: scale-in-center 1.5s both;
+}
+
+.part11 {
+  animation: scale-in-center 1.7s both;
 }
 
 /*# sourceMappingURL=style.css.map */
