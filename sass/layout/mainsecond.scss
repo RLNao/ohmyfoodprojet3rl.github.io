@@ -1,0 +1,151 @@
+.menucontainer {
+width: 100%;
+flex-direction: column;
+    @include centered;                                                                  
+   
+    img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+     top: 0px;
+
+}   
+
+
+&__box {
+    margin-top: 200px;
+ border-top-left-radius: 30px;   
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+background-color: $verysoftgray;
+width: 100%;
+height: 600px;
+position: relative;
+z-index: 3  ;
+
+&__part
+{
+@include centered;
+flex-direction: column;
+border: red 1px solid; 
+
+padding: 20px;
+width: 100%; 
+height: 420px;
+
+
+&__whitebox
+{
+
+position: relative;
+height: 80px;
+width: 100%;
+background-color: white;
+border-radius: 18px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+margin: 10px;
+@include boxshadow;
+
+h6 
+{
+font-size: 16px;
+ margin: 0;
+}
+p {
+padding-top: 10px;
+margin: 0;
+font-size: 14px;
+}
+
+span
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+
+.movingbox
+{
+    content: "";
+    @include centered;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    background-color: $softgreen;
+    height: 100%;
+    width: 0px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.fa-circle-check {
+color: white;
+opacity: 0;
+font-size: 30px;
+transition: all 500ms ease-in-out;
+
+}
+
+
+
+&:hover {
+.movingbox {
+width: 75px;
+}
+
+span {
+padding-right: 80px;
+}
+
+.fa-circle-check {
+    transform: rotate(1turn);
+    width: 35px;
+    opacity: 1;
+    }
+}
+
+}
+}
+} 
+
+h5 {
+
+
+font-size: 18px;
+font-weight: 300;
+font-family: Roboto;
+margin: 0;
+border-bottom: 5px solid $softgreen;
+width: 50px;
+padding: 5px;
+margin: 10px;
+margin-right: 90%;
+}
+
+
+h4 {
+font-family: shrikhand;
+font-size: 28px;
+font-weight: 100;
+padding-left: 15px;
+}
+
+.specialheart 
+{
+    top: 7%;
+    left: 85%;
+    font-size: 35px;
+}
+}
+
+
+
