@@ -20,24 +20,25 @@
     
     &__btn
     {
+
         font-size: 20PX;
         padding: 25px;
         border-radius: 100px;
         border: none;
         margin: 50px;
-        color: white;
+color: white;
         transition: transform 1000ms ease;
         @include boxshadow;
         
         &--gradient
         {
         background-image: linear-gradient($secondarypurple, $primarypurple);
-        
+      
         }
         
         &:hover
         {
-         
+
             transform: scale(1.1);
             background: linear-gradient(lighten($secondarypurple, 5), lighten($primarypurple, 5));
             box-shadow:0px 12px 17px 1px rgba(0,0,0,0.34);

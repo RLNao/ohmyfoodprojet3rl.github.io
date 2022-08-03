@@ -471,4 +471,11 @@ header {
   animation: scale-in-center 1.7s both;
 }
 
+.selectme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */

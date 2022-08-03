@@ -207,3 +207,10 @@ padding-left: 15px;
 {
     animation: scale-in-center 1.7s both;
 }
+
+.selectme 
+{
+    @include centered;
+    color: black;
+
+}
