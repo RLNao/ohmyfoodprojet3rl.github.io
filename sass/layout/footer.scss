@@ -14,15 +14,18 @@ flex-direction: column;
 width: 50%;
 @media (min-width: 983px){
     width: 100%;
+
 @include centered;
-    
+
                 }
        
  ul {
         list-style: none;
         padding: 10px;
+
 li
 {
+
 padding: 10px;
 font-size: 15px;
 display: flex;
@@ -34,6 +37,7 @@ a
 text-decoration: none;
 list-style: none;
 color: white;
+
  } 
 }
 
@@ -48,4 +52,17 @@ margin: 10px;
  }
 
 }
+}
+
+@media (min-width: 983px){
+  .foot  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+a {
+    padding: 30px;
+    font-size: 20px;
+}
+}
+
 }

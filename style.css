@@ -312,6 +312,17 @@ footer .foot h6 {
   margin: 10px;
 }
 
+@media (min-width: 983px) {
+  .foot ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .foot ul a {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
 header {
   z-index: 1;
   position: relative;
@@ -359,6 +370,11 @@ header {
   width: 100%;
   height: auto;
 }
+@media (min-width: 993px) {
+  .menucontainer__box__part {
+    border-top: dotted #99e2d0 10px;
+  }
+}
 .menucontainer__box__part__whitebox {
   position: relative;
   height: 80px;
@@ -370,6 +386,11 @@ header {
   flex-direction: column;
   margin: 10px;
   box-shadow: 0px 9px 15px -11px rgba(0, 0, 0, 0.7);
+}
+@media (min-width: 993px) {
+  .menucontainer__box__part__whitebox {
+    width: 45%;
+  }
 }
 .menucontainer__box__part__whitebox h6 {
   font-size: 16px;
@@ -433,16 +454,34 @@ header {
   margin: 10px;
   margin-right: 90%;
 }
+@media (min-width: 993px) {
+  .menucontainer h5 {
+    position: absolute;
+    font-size: 50px;
+  }
+}
 .menucontainer h4 {
   font-family: shrikhand;
   font-size: 28px;
   font-weight: 100;
   padding-left: 15px;
 }
+@media (min-width: 993px) {
+  .menucontainer h4 {
+    padding-left: 30%;
+    font-size: 45px;
+  }
+}
 .menucontainer .specialheart {
   top: 7%;
   left: 85%;
   font-size: 35px;
+}
+@media (min-width: 993px) {
+  .menucontainer .specialheart {
+    left: 65%;
+    top: 13%;
+  }
 }
 
 @keyframes scale-in-center {
@@ -476,6 +515,8 @@ header {
   align-items: center;
   justify-content: center;
   color: black;
+  background-color: #f6f6f6;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
