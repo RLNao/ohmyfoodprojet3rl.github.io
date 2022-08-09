@@ -74,28 +74,42 @@ margin: 10px;
 
 h6 
 {
-font-size: 16px;
+font-size: 20px;
  margin: 0;
-
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden;
 }
 p {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
 padding-top: 10px;
 margin: 0;
-font-size: 14px;
-
-
+font-size: 20px;
 }
 
 span
 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 500ms;
-
+display: flex;
+justify-content: flex-end;
+font-size: 16px;
+font-weight: bold;
+transition: all 500ms;
 }
 
+.textcontent 
+{
+height: 50px;
+width: auto;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+&:hover 
+{
+width: 65%;
+}
+}
 
 .movingbox
 {
@@ -118,7 +132,6 @@ color: white;
 opacity: 0;
 font-size: 30px;
 transition: all 500ms ease-in-out;
-
 }
 
 
@@ -126,8 +139,7 @@ transition: all 500ms ease-in-out;
 &:hover {
 h6 
 {
-    text-overflow: ellipsis;
-
+text-overflow: ellipsis;
 }
 
 .movingbox {

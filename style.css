@@ -393,13 +393,19 @@ header {
   }
 }
 .menucontainer__box__part__whitebox h6 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menucontainer__box__part__whitebox p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
 }
 .menucontainer__box__part__whitebox span {
   display: flex;
@@ -407,6 +413,15 @@ header {
   font-size: 16px;
   font-weight: bold;
   transition: all 500ms;
+}
+.menucontainer__box__part__whitebox .textcontent {
+  height: 50px;
+  width: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menucontainer__box__part__whitebox .textcontent:hover {
+  width: 65%;
 }
 .menucontainer__box__part__whitebox .movingbox {
   content: "";
