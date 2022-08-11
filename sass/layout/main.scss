@@ -1,3 +1,12 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .main-container {
   height: auto;
 
@@ -15,7 +24,6 @@
 
   &__box {
     @include centered;
-
     position: relative;
     width: 100%;
 
@@ -26,6 +34,14 @@
       flex-direction: row;
     }
 
+    a {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      list-style-type: none;
+      text-decoration: none;
+      color: black;
+    }
     &__new {
       padding: 10px;
       height: 35px;
@@ -41,18 +57,20 @@
 
   img {
     width: 100%;
-    height: 200px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
   }
 
   figure {
+    height: 270px;
     width: 100%;
     background-color: white;
-    border-radius: 30px;
-
+    border-radius: 20px;
+    margin: 0;
     color: black;
+
     @include boxshadow;
     &:hover {
       box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.39);
@@ -66,10 +84,12 @@
   }
 
   figcaption {
-    height: 40px;
-    text-align: left;
+    height: 60px;
+    font-size: 16px;
     font-weight: bold;
-    margin: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    line-height: 1.5;
     @media (min-width: 983px) {
       padding-left: 50px;
       font-size: 30px;

@@ -129,6 +129,15 @@ header {
   color: #7e7e7e;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .main-container {
   height: auto;
 }
@@ -161,6 +170,14 @@ header {
     flex-direction: row;
   }
 }
+.main-container__box a {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
 .main-container__box__new {
   padding: 10px;
   height: 35px;
@@ -174,15 +191,17 @@ header {
 }
 .main-container img {
   width: 100%;
-  height: 200px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  height: 190px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   object-fit: cover;
 }
 .main-container figure {
+  height: 270px;
   width: 100%;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
+  margin: 0;
   color: black;
   box-shadow: 0px 9px 15px -11px rgba(0, 0, 0, 0.7);
 }
@@ -195,10 +214,12 @@ header {
   color: black;
 }
 .main-container figcaption {
-  height: 40px;
-  text-align: left;
+  height: 60px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+  line-height: 1.5;
 }
 @media (min-width: 983px) {
   .main-container figcaption {
@@ -364,7 +385,7 @@ header {
   width: 100%;
   height: 350px;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   top: 80px;
 }
 .menucontainer__box {
@@ -423,7 +444,7 @@ header {
   overflow: hidden;
   padding-top: 10px;
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 .menucontainer__box__part__whitebox span {
   display: flex;
@@ -517,7 +538,7 @@ header {
   }
 }
 
-@keyframes scale-in-center {
+@keyframes appear {
   0% {
     transform: translateY(50px);
     opacity: 0;
@@ -530,23 +551,23 @@ header {
 .part1,
 .part4,
 .part7 {
-  animation: scale-in-center 1s both;
+  animation: appear 1s both;
 }
 
 .part2,
 .part5,
 .part8 {
-  animation: scale-in-center 1.3s both;
+  animation: appear 1.3s both;
 }
 
 .part3,
 .part6,
 .part9 {
-  animation: scale-in-center 1.5s both;
+  animation: appear 1.5s both;
 }
 
 .part11 {
-  animation: scale-in-center 1.7s both;
+  animation: appear 1.7s both;
 }
 
 .selectme {
