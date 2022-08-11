@@ -22,7 +22,7 @@ header {
 .sub-header {
   text-align: center;
   background-color: #eaeaea;
-  color: #271A1A;
+  color: #271a1a;
   width: 100%;
   padding: 2px;
   font-size: 12px;
@@ -45,7 +45,7 @@ header {
   font-weight: 400;
 }
 .sub-header-second__btn {
-  font-size: 20PX;
+  font-size: 20px;
   padding: 25px;
   border-radius: 100px;
   border: none;
@@ -55,7 +55,7 @@ header {
   box-shadow: 0px 9px 15px -11px rgba(0, 0, 0, 0.7);
 }
 .sub-header-second__btn--gradient {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff79da, #9356dc);
 }
 .sub-header-second__btn:hover {
   transform: scale(1.1);
@@ -112,7 +112,7 @@ header {
 .secondary-section__list ol li::before {
   content: counter(numbers);
   counter-increment: numbers;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 100px;
   width: 30px;
   height: 30px;
@@ -152,7 +152,6 @@ header {
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 10px;
 }
 @media (min-width: 983px) {
   .main-container__box {
@@ -201,9 +200,21 @@ header {
   font-weight: bold;
   margin: 15px;
 }
+@media (min-width: 983px) {
+  .main-container figcaption {
+    padding-left: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+  }
+}
 .main-container span {
   font-weight: 300;
-  margin-left: 5px;
+}
+@media (min-width: 983px) {
+  .main-container span {
+    padding-left: 90px;
+  }
 }
 
 .heartone {
@@ -219,7 +230,7 @@ header {
   left: 76%;
   top: 78%;
   opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -233,11 +244,12 @@ header {
     background-color: #f6f6f6;
     height: 100px;
     margin: 0;
-    text-align: center;
+    width: 100%;
     margin-top: 30px;
     padding-top: 30px;
   }
   h3 {
+    padding-right: 150px;
     padding-top: 50px;
   }
 }
@@ -266,6 +278,13 @@ header {
     transform: scale3d(1, 1, 1);
   }
 }
+.Ftitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -509,15 +528,21 @@ header {
     opacity: 1;
   }
 }
-.part1, .part4, .part7 {
+.part1,
+.part4,
+.part7 {
   animation: scale-in-center 1s both;
 }
 
-.part2, .part5, .part8 {
+.part2,
+.part5,
+.part8 {
   animation: scale-in-center 1.3s both;
 }
 
-.part3, .part6, .part9 {
+.part3,
+.part6,
+.part9 {
   animation: scale-in-center 1.5s both;
 }
 

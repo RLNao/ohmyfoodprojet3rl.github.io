@@ -1,83 +1,66 @@
-.secondary-section
-{
-@include centered;
+.secondary-section {
+  @include centered;
 
-height:450px;
-flex-direction: column;
-width: 100%;
-@media (min-width: 983px){
+  height: 450px;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: 983px) {
     height: 250px;
-                            }
+  }
 
-            
-&__list {
+  &__list {
     counter-set: numbers;
     width: 100%;
 
-
-     ol {
-    @include centered;
-    flex-wrap: wrap;
-    width: 100%;
+    ol {
+      @include centered;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     @media (min-width: 679px) and (max-width: 983px) {
-        ol {
+      ol {
         flex-direction: column;
+      }
 
-    
-    }
-    
-    li {
+      li {
         width: 60%;
-
-    }
-    
+      }
     }
 
-@media (max-width: 678px) {
-    li {
-    width: 100%;
-
-}
-
-}
-
-
-    
-    ol li  {
-
-position: relative;
-
-    &::before
-{
- content: counter(numbers);
-counter-increment: numbers;
-background-color: $primarypurple;
-border-radius: 100px;
-width: 30px;
-height: 30px;
-@include centered;
-color: white;
-position: absolute;
-right: 96%;
-bottom: 30%;
-}
-    background-color: #f6f6f6;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 20px;
-    list-style-type: none;
-    @include boxshadow;
+    @media (max-width: 678px) {
+      li {
+        width: 100%;
+      }
     }
-    
+
+    ol li {
+      position: relative;
+
+      &::before {
+        content: counter(numbers);
+        counter-increment: numbers;
+        background-color: $primarypurple;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        @include centered;
+        color: white;
+        position: absolute;
+        right: 96%;
+        bottom: 30%;
+      }
+      background-color: #f6f6f6;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 20px;
+      list-style-type: none;
+      @include boxshadow;
+    }
+
     i {
-        padding-right: 30px;
-        color: $softgray;
+      padding-right: 30px;
+      color: $softgray;
     }
+  }
 }
-
-
-
-}
-

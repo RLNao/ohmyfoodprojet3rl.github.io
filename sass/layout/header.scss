@@ -1,29 +1,22 @@
-header
-{
-    font-family: "Shrikhand";
-    text-align: center;
-    box-shadow: 0px 1px 10px grey;
-    height: 80px;
-    border: transparent 1px solid;
-    position: relative;
-    
+header {
+  font-family: "Shrikhand";
+  text-align: center;
+  box-shadow: 0px 1px 10px grey;
+  height: 80px;
+  border: transparent 1px solid;
+  position: relative;
 }
 
-.sub-header
-{
-    text-align: center;
-     background-color: #eaeaea;
-    color:  #271A1A;
-     width: 100%;
-     padding: 2px;
-     font-size: 12px;
-     font-weight: 100;
+.sub-header {
+  text-align: center;
+  background-color: #eaeaea;
+  color: #271a1a;
+  width: 100%;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 100;
 
-     h2
-     {
-         font-weight: 400;
-     }
-
-     
-
+  h2 {
+    font-weight: 400;
+  }
 }

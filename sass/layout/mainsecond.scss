@@ -1,249 +1,219 @@
 header {
-                          
-    z-index: 1;
-position: relative;
-
-
+  z-index: 1;
+  position: relative;
 }
 
 .fa-arrow-left-long {
-    font-size: 20px;
-   position: absolute;
-    top: 40%;
-    left: 10%;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
-
 
 .menucontainer {
-width: 100%;
-flex-direction: column;
-    @include centered;                                                                  
-   
-    img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        position: absolute;
-         top: 80px;
-    
-    }   
-    
+  width: 100%;
+  flex-direction: column;
+  @include centered;
 
-&__box {
-    margin-top: 200px;
- border-top-left-radius: 30px;   
- border-top-left-radius: 30px;
- border-top-right-radius: 30px;
-background-color: $verysoftgray;
-width: 100%;
-height: 600px;
-position: relative;
-z-index: 3  ;
-
-&__part
-{
-@include centered;
-flex-direction: column;
-
-background-color: $verysoftgray;
-padding: 20px;
-width: 100%; 
-height: auto;
-@media (min-width: 993px){
-border-top: dotted $softgreen 10px;
-
-  }
-&__whitebox
-
-{
-  @media (min-width: 993px){
-    width: 45%;
- }
-position: relative;
-height: 80px;
-width: 100%;
-background-color: white;
-border-radius: 18px;
-padding: 10px;
-display: flex;
-flex-direction: column;
-margin: 10px;
-@include boxshadow;
-
-
-
-h6 
-{
-font-size: 20px;
- margin: 0;
- text-overflow: ellipsis;
- white-space: nowrap;
- overflow: hidden;
-}
-p {
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-padding-top: 10px;
-margin: 0;
-font-size: 20px;
-}
-
-span
-{
-display: flex;
-justify-content: flex-end;
-font-size: 16px;
-font-weight: bold;
-transition: all 500ms;
-}
-
-.textcontent 
-{
-height: 50px;
-width: auto;
-text-overflow: ellipsis;
-white-space: nowrap;
-
-&:hover 
-{
-width: 65%;
-}
-}
-
-.movingbox
-{
-    content: "";
-    @include centered;
-    top: 0%;
-    right: 0%;
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
     position: absolute;
-    background-color: $softgreen;
-    height: 100%;
-    width: 0px;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-    transition: all 500ms ease-in-out;
+    top: 80px;
+  }
 
-}
+  &__box {
+    margin-top: 200px;
+    border-top-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: $verysoftgray;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 3;
 
-.fa-circle-check {
-color: white;
-opacity: 0;
-font-size: 30px;
-transition: all 500ms ease-in-out;
-}
+    &__part {
+      @include centered;
+      flex-direction: column;
 
-
-
-&:hover {
-h6 
-{
-text-overflow: ellipsis;
-}
-
-.movingbox {
-width: 75px;
-}
-
-span {
-padding-right: 80px;
-
-}
-
-.fa-circle-check {
-    transform: rotate(1turn);
-    width: 35px;
-    opacity: 1;
-    }
-}
-
-}
-}
-} 
-
-h5 {
-  @media (min-width: 993px){
-position: absolute;
-font-size: 50px;
-    }
-
-font-size: 18px;
-font-weight: 300;
-font-family: Roboto;
-margin: 0;
-border-bottom: 5px solid $softgreen;
-width: 50px;
-padding: 5px;
-margin: 10px;
-margin-right: 90%;
-}
-
-
-h4 {
-
-  @media (min-width: 993px){
-padding-left: 30%;
-    font-size: 45px;
-
+      background-color: $verysoftgray;
+      padding: 20px;
+      width: 100%;
+      height: auto;
+      @media (min-width: 993px) {
+        border-top: dotted $softgreen 10px;
+      }
+      &__whitebox {
+        @media (min-width: 993px) {
+          width: 45%;
         }
-font-family: shrikhand;
-font-size: 28px;
-font-weight: 100;
-padding-left: 15px;
-}
+        position: relative;
+        height: 80px;
+        width: 100%;
+        background-color: white;
+        border-radius: 18px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        @include boxshadow;
 
-.specialheart 
-{
+        h6 {
+          font-size: 20px;
+          margin: 0;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        p {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          padding-top: 10px;
+          margin: 0;
+          font-size: 20px;
+        }
+
+        span {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 16px;
+          font-weight: bold;
+          transition: all 500ms;
+        }
+
+        .textcontent {
+          height: 50px;
+          width: auto;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &:hover {
+            width: 65%;
+          }
+        }
+
+        .movingbox {
+          content: "";
+          @include centered;
+          top: 0%;
+          right: 0%;
+          position: absolute;
+          background-color: $softgreen;
+          height: 100%;
+          width: 0px;
+          border-top-right-radius: 18px;
+          border-bottom-right-radius: 18px;
+          transition: all 500ms ease-in-out;
+        }
+
+        .fa-circle-check {
+          color: white;
+          opacity: 0;
+          font-size: 30px;
+          transition: all 500ms ease-in-out;
+        }
+
+        &:hover {
+          h6 {
+            text-overflow: ellipsis;
+          }
+
+          .movingbox {
+            width: 75px;
+          }
+
+          span {
+            padding-right: 80px;
+          }
+
+          .fa-circle-check {
+            transform: rotate(1turn);
+            width: 35px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  h5 {
+    @media (min-width: 993px) {
+      position: absolute;
+      font-size: 50px;
+    }
+
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto;
+    margin: 0;
+    border-bottom: 5px solid $softgreen;
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 90%;
+  }
+
+  h4 {
+    @media (min-width: 993px) {
+      padding-left: 30%;
+      font-size: 45px;
+    }
+    font-family: shrikhand;
+    font-size: 28px;
+    font-weight: 100;
+    padding-left: 15px;
+  }
+
+  .specialheart {
     top: 7%;
     left: 85%;
     font-size: 35px;
-    @media (min-width: 993px){
-left: 65%;
-top: 13%;
-      
-              }
+    @media (min-width: 993px) {
+      left: 65%;
+      top: 13%;
+    }
+  }
 }
-}
-
-
-
 
 @keyframes scale-in-center {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  
-  .part1, .part4, .part7
-  {
-    animation: scale-in-center 1s both;
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
-
-  .part2, .part5, .part8
-  {
-    animation: scale-in-center 1.3s both;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-
-  .part3, .part6, .part9 
-  {
-    animation: scale-in-center 1.5s both;
-  }
-
-.part11
-{
-    animation: scale-in-center 1.7s both;
 }
 
-.selectme 
-{
-    @include centered;
-    color: black;
-    background-color: $verysoftgray;
-width: 100%;
+.part1,
+.part4,
+.part7 {
+  animation: scale-in-center 1s both;
+}
+
+.part2,
+.part5,
+.part8 {
+  animation: scale-in-center 1.3s both;
+}
+
+.part3,
+.part6,
+.part9 {
+  animation: scale-in-center 1.5s both;
+}
+
+.part11 {
+  animation: scale-in-center 1.7s both;
+}
+
+.selectme {
+  @include centered;
+  color: black;
+  background-color: $verysoftgray;
+  width: 100%;
 }

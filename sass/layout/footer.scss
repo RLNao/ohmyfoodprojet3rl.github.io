@@ -1,68 +1,57 @@
-footer 
-{
-    @include centered;
+footer {
+  @include centered;
+  flex-direction: column;
+  font-size: 12px;
+  width: 100%;
+  background-color: #353535;
+  align-items: flex-start;
+
+  .foot {
+    display: flex;
     flex-direction: column;
-    font-size: 12px;
-    width: 100%;
-    background-color: #353535;
-    align-items: flex-start;
+    width: 50%;
+    @media (min-width: 983px) {
+      width: 100%;
 
+      @include centered;
+    }
 
-.foot {
-display: flex;
-flex-direction: column;
-width: 50%;
-@media (min-width: 983px){
-    width: 100%;
+    ul {
+      list-style: none;
+      padding: 10px;
 
-@include centered;
-
-                }
-       
- ul {
-        list-style: none;
+      li {
         padding: 10px;
+        font-size: 15px;
+        display: flex;
+      }
 
-li
-{
+      a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+      }
+    }
 
-padding: 10px;
-font-size: 15px;
-display: flex;
-
+    h6 {
+      font-size: 18px;
+      font-family: Shrikhand;
+      color: white;
+      font-weight: 100;
+      padding-left: 30px;
+      margin: 10px;
+    }
+  }
 }
 
-a
-{
-text-decoration: none;
-list-style: none;
-color: white;
-
- } 
-}
-
-h6 {
-
-    font-size: 18px;
-    font-family: Shrikhand;
-    color: white;
-    font-weight: 100;
-padding-left: 30px;
-margin: 10px;
- }
-
-}
-}
-
-@media (min-width: 983px){
-  .foot  ul {
+@media (min-width: 983px) {
+  .foot ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-a {
-    padding: 30px;
-    font-size: 20px;
-}
-}
-
+    a {
+      padding: 30px;
+      font-size: 20px;
+    }
+  }
 }
