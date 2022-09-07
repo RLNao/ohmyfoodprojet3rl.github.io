@@ -31,7 +31,7 @@ body {
       display: flex;
       width: 50%;
       flex-wrap: wrap;
-      flex-direction: row;
+      flex-direction: column;
     }
 
     a {
@@ -91,8 +91,8 @@ body {
     margin-left: 15px;
     line-height: 1.5;
     @media (min-width: 983px) {
-      padding-left: 50px;
-      font-size: 30px;
+      padding-left: 0px;
+      font-size: 20px;
       display: flex;
       align-items: center;
     }
@@ -101,7 +101,7 @@ body {
   span {
     font-weight: 300;
     @media (min-width: 983px) {
-      padding-left: 90px;
+      padding-left: 30px;
     }
   }
 }

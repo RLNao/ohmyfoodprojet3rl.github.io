@@ -33,7 +33,6 @@ body {
   border-bottom-color: #9356dc;
   border-radius: 50%;
   display: inline-block;
-  box-sizing: border-box;
   animation: loader 2s linear forwards;
 }
 
@@ -127,6 +126,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  padding: 0;
 }
 @media (min-width: 679px) and (max-width: 983px) {
   .secondary-section__list ol {
@@ -208,7 +208,7 @@ body {
     display: flex;
     width: 50%;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .main-container__box a {
@@ -264,8 +264,8 @@ body {
 }
 @media (min-width: 983px) {
   .main-container figcaption {
-    padding-left: 50px;
-    font-size: 30px;
+    padding-left: 0px;
+    font-size: 20px;
     display: flex;
     align-items: center;
   }
@@ -275,7 +275,7 @@ body {
 }
 @media (min-width: 983px) {
   .main-container span {
-    padding-left: 90px;
+    padding-left: 30px;
   }
 }
 
@@ -485,6 +485,8 @@ footer .foot h6 {
   font-size: 15px;
 }
 .menucontainer__box__part__whitebox span {
+  position: relative;
+  bottom: 15px;
   display: flex;
   justify-content: flex-end;
   font-size: 16px;
@@ -542,7 +544,6 @@ footer .foot h6 {
   margin: 0;
   border-bottom: 5px solid #99e2d0;
   width: 50px;
-  padding: 5px;
   margin: 10px;
   margin-right: 90%;
 }

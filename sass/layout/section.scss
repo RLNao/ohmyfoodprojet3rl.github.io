@@ -16,6 +16,7 @@
       @include centered;
       flex-wrap: wrap;
       width: 100%;
+      padding: 0;
     }
 
     @media (min-width: 679px) and (max-width: 983px) {
